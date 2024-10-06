@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Specifies the character encoding for the document -->
+        <meta charset="UTF-8">
+        
+        <!-- Link to external stylesheet-->
+        <link rel="stylesheet" href="assets/main.css">
+        <script src="assets/main.js"></script>
+        <!-- Fav-icon -->
+         <link rel="icon" type="image/png" size="32*32" href="assets/images/logo.png">
+        <!-- 'link' for the viewport tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Bootstrap 5 CSS CDN for styling -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        
+        <!-- Font Awesome 6 CDN for icons -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" integrity="sha384-oS8BGZP9jyda8hThWZAh5UUQW9dfF1WTEBfLVHt7Ox20GpVxlfDe0LU/7CKP8Lq2" crossorigin="anonymous">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com" rel="preconnect">
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy:wght@400&display=swap" rel="stylesheet">
+        <!--Aos-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+        <!--Animate css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
+        <!-- The title of the webpage -->
+        <title>SmokeyBites</title>
+        <style>
+        
+        </style>
+    </head>
+    <body>
+        <!--start  Header part -->
+        <header id="main-header">
+            
+            <nav>
+              <ul class="sidebar">
+                <li onclick="hideSideBar()"><a href="#"><i class="fa-solid fa-xmark" ></i></a></li>
+                <li><a href="#index" class="">Home</a></li>
+                <li><a href="#about" class="">About</a></li>
+                <li><a href="#menu" class="">Menu</a></li>
+                <li><a href="#specials" class="">Specials</a></li>
+                <li><a href="#events" class="">Events</a></li>
+                <li><a href="#gallery" class="">Gallery</a></li>
+                <li><a href="#contact" class="">Contact</a></li>
+                <li><a href="#book-a-table" class="">Book a Table</a></li>
+            </ul>
+                <ul><li class=""> <div><img src="assets/images/logo.png" alt="SmokeyBites logo" width="80" height="80"><h1>SmokeyBites</h1></div> </li>
+                    <li class="hideOnMobile"><a href="#index">Home</a></li>
+                    <li class="hideOnMobile"><a href="#about">About</a></li>
+                    <li class="hideOnMobile"><a href="#menu">Menu</a></li>
+                    <li class="hideOnMobile"><a href="#specials">Specials</a></li>
+                    <li class="hideOnMobile"><a href="#events">Events</a></li>
+                    <li class="hideOnMobile"><a href="#gallery">Gallery</a></li>
+                    <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+                    <li class="book-a-table hideOnSmallScreen"><a href="#book-a-table" >Book a Table</a></li>
+                    <li onclick="showSideBar()" class="menu-button"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+  <main>
+      <!-- Hero Section -->
+       <section class="hero">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="300">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/images/gallery-1.jpg" class="d-block w-100" height="700" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="h1 animate__animated animate__rotateIn">SmokeyBites  <span style="color:white;" class="h1"> Restaurant</span></h1>
+              <p class="animate__animated animate__rotateIn">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut.</p>
+              <a href="#menu">Our Menu</a>
+              <a href="#book-a-table">Book a Table</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/hero-2.jpg" class="d-block w-100" height="700" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="h1">At vero eos et accusamus</h1>
+              <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut.</p>
+              <a href="#menu">Our Menu</a>
+              <a href="#book-a-table">Book a Table</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/hero-3.jpg" class="d-block w-100" height="700" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="h1">Temporibus autem quibusdam</h1>
+              <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut.</p>
+              <a href="#menu">Our Menu</a>
+              <a href="#book-a-table">Book a Table</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+      <!--End Hero Section-->
+
+      <!-- Start About Section-->
+      <section class="about" id="about" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+        <h2>About</h2>
+        <div class="about-flex">
+          <div class="about-img" >
+            <img src="assets/images/gallery-2.jpg" alt="image">
+          </div>
+          <div class="about-content" >
+            <h3 class="">Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="">
+              <p><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+              <p><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+          </div>
+        </div>
+      </section>
+      <!--End About Section-->
+      <!-- Start Why Us Section-->
+      <section class="why-us" id="index" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
+        <h4>Why Us</h4>
+        <h2>Why choose <span>Our Restaurant</span></h2>
+        <div class="why-us-flex-card">
+          <div class="inner-card" data-aos="fade-up" data-aos-duration="1000">
+            <h2>01</h2>
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, minima.</p>
+          </div>
+          <div class="inner-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <h2>02</h2>
+            <h2>Lorem, ipsum.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, inventore!</p>
+          </div>
+          <div class="inner-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <h2>03</h2>
+            <h2>Lorem, ipsum.</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, distinctio!</p>
+          </div>
+        </div>
+      </section>
+      
+      <!--End Why Us Section-->
+      <!--Start Menu Section-->
+      <section class="menu" id="menu" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+        <h3>Menu</h3>
+        <h2>Check Our <span>Tasty Menu</span></h2>
+        <div class="menu-nav">
+          <a href="#all">All</a>
+          <a href="#starters">Starters</a>
+          <a href="#salads">salads</a>
+          <a href="#specials">Specials</a>
+        </div>
+        <div id="all" class="menu-grid content" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="400">
+           
+            <div class="menu-item-flex  " data-aos="flip-right" data-aos-duration="1000" data-aos-delay="400">
+              <img src="assets/images/starters-1.jpg" alt="">
+              <div class="menu-item-content">
+                 <h4>Lobstar <span class="add-dots"></span><span class="span">$ 40</span></h4>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+              </div>
+            </div>
+
+            <div class="menu-item-flex  "  data-aos="flip-right" data-aos-duration="1000" data-aos-delay="400"> 
+              <img src="assets/images/starters-2.jpg" alt="">
+              <div class="menu-item-content">
+                 <h4>Lobstar <span class="add-dots"></span><span class="span">$ 40</span></h4>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+              </div>
+            </div>
+           
+          <!--salads -->
+           
+            <div class="menu-item-flex " data-aos="flip-right" data-aos-duration="1000" data-aos-delay="400">
+              <img src="assets/images/salads-1.jpg" alt="">
+              <div class="menu-item-content">
+                <h4>Lobstar <span class="add-dots"></span><span class="span">$ 40</span></h4>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+              </div>
+            </div>
+           
+
+            <div class="menu-item-flex  " data-aos="flip-right" data-aos-duration="1000" data-aos-delay="400" >
+              <img src="assets/images/salads-2.jpg" alt="">
+              <div class="menu-item-content">
+                <h4>Lobstar <span class="add-dots"></span><span class="span">$ 40</span></h4>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+              </div>
+            </div>
+           
+            <!--Specials-->
+           
+            <div class="menu-item-flex " data-aos="flip-right" data-aos-duration="1000" data-aos-delay="400">
+              <img src="assets/images/specials-1.jpg" alt="">
+              <div class="menu-item-content">
+                 <h4>Lobstar <span class="add-dots"></span><span class="span">$ 40</span></h4>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+              </div>
+            </div>
+
+            <div class="menu-item-flex  "  data-aos="flip-right" data-aos-duration="1000" data-aos-delay="400"> 
+              <img src="assets/images/specials-2.jpg" alt="">
+              <div class="menu-item-content">
+                 <h4>Lobstar <span class="add-dots"></span><span class="span">$ 40</span></h4>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+              </div>
+            </div>
+
+            <div class="menu-item-flex  "> 
+              <img src="assets/images/specials-3.jpg" alt="">
+              <div class="menu-item-content">
+                 <h4>Lobstar <span class="add-dots"></span><span class="span">$ 40</span></h4>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+              </div>
+            </div>
+
+            <div class="menu-item-flex "> 
+              <img src="assets/images/specials-4.jpg" alt="">
+              <div class="menu-item-content">
+                 <h4>Lobstar <span class="add-dots"></span><span class="span">$ 40</span></h4>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+              </div>
+            </div>
+          </div>
+      <!--End All -->
+          <!--Starters-->
+          <div id="starters" class="content" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="400"> 
+            <div class="menu-item-flex" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"   >
+              <img src="assets/images/starters-1.jpg" alt="">
+              <div class="menu-item-content">
+                 <h4>Lobstar <span class="add-dots"></span><span class="span">$ 40</span></h4>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+              </div>
+            </div>
+
+            <div class="menu-item-flex" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"  > 
+              <img src="assets/images/starters-2.jpg" alt="">
+              <div class="menu-item-content">
+                 <h4>Lobstar <span class="add-dots"></span><span class="span">$ 40</span></h4>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+              </div>
+            </div>
+          </div>
+          <!--salads -->
+          <div id="salads" class="content" data-aos="slide-right" data-aos-duration="1000" data-aos-delay="400">
+            <div class="menu-item-flex" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" >
+              <img src="assets/images/salads-1.jpg" alt="">
+              <div class="menu-item-content">
+                <h4>Lobstar <span class="add-dots"></span><span class="span">$ 40</span></h4>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+              </div>
+            </div>
+           
+
+            <div class="menu-item-flex" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"  >
+              <img src="assets/images/salads-2.jpg" alt="">
+              <div class="menu-item-content">
+                <h4>Lobstar <span class="add-dots"></span><span class="span">$ 40</span></h4>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+              </div>
+            </div>
+          </div>
+          <!--Specials-->
+          <div id="specials" class="content" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="400">
+            <div class="menu-item-flex" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+              <img src="assets/images/specials-1.jpg" alt="">
+              <div class="menu-item-content">
+                 <h4>Lobstar <span class="add-dots"></span><span class="span">$ 40</span></h4>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+              </div>
+            </div>
+
+            <div class="menu-item-flex" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" > 
+              <img src="assets/images/specials-2.jpg" alt="">
+              <div class="menu-item-content">
+                 <h4>Lobstar <span class="add-dots"></span><span class="span">$ 40</span></h4>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+              </div>
+            </div>
+
+            <div class="menu-item-flex" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"> 
+              <img src="assets/images/specials-3.jpg" alt="">
+              <div class="menu-item-content">
+                 <h4>Lobstar <span class="add-dots"></span><span class="span">$ 40</span></h4>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+              </div>
+            </div>
+
+            <div class="menu-item-flex" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"> 
+              <img src="assets/images/specials-4.jpg" alt="">
+              <div class="menu-item-content">
+                 <h4>Lobstar <span class="add-dots"></span><span class="span">$ 40</span></h4>
+                <p>Lorem, deren, trataro, filede, nerada</p>
+              </div>
+            </div>
+          </div>
+           
+         
+      </section>
+      <!--End Menu Section-->
+      <!--Start Specials Section-->
+      <section class="specials" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+        <h3>Specials</h3>
+        <h2>Check Our <span>Specials</span></h2>
+        <div class="specials-flex">
+          <div class="specials-flex-part-1">
+            <a href="#Modi">Biryani</a>
+            <a href="#praesentium">Thandoori</a>
+            <a href="#Pariatur">Tikka</a>
+            <a href="#Nostrum">Pakoda</a>
+            <a href="#Iusto">Kebab</a>
+          </div>
+          <div class="on-110px-width">
+          <div class="content specials-flex-part-2" id="Modi">
+            <div class="specials-flex-part-2-content">
+              <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+              <h5>Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</h5>
+              <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+            </div>
+            <div class="specials-flex-part-2-img">
+              <img src="assets/images/biryani.jpg" alt="" class="shape">
+            </div>
+          </div>
+
+
+          <div class="content specials-flex-part-2" id="praesentium"> 
+            <div class="specials-flex-part-2-content">
+              <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+              <h5>Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</h5>
+              <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+            </div>
+            <div class="specials-flex-part-2-img">
+              <img src="assets/images/specials-4.jpg" alt="" class="shape">
+            </div>
+          </div>
+
+          <div class="content specials-flex-part-2" id="Pariatur"> 
+            <div class="specials-flex-part-2-content">
+              <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+              <h5>Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</h5>
+              <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+            </div>
+            <div class="specials-flex-part-2-img">
+              <img src="assets/images/tikka.jpg" alt="" class="shape">
+            </div>
+          </div>
+
+          <div class="content specials-flex-part-2" id="Nostrum"> 
+            <div class="specials-flex-part-2-content">
+              <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+              <h5>Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</h5>
+              <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+            </div>
+            <div class="specials-flex-part-2-img">
+              <img src="assets/images/pakoda.jpg" alt="" class="shape">
+            </div>
+          </div>
+
+          <div class="content specials-flex-part-2" id="Iusto"> 
+            <div class="specials-flex-part-2-content">
+              <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+              <h5>Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</h5>
+              <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+            </div>
+            <div class="specials-flex-part-2-img">
+              <img src="assets/images/kebab.jpg" alt="" class="shape">
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      <!--End Specials Section-->
+      <!--Start Event Section-->
+      <section class="event" id="events" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+        <h3>Events</h3>
+        <h2>Let Us Check <span>Our Events</span></h2>
+        <div class="bg">
+          <div class="bgcolor">
+          <div id="carouselExampleDark" class="carousel carousel-dark  carousel-slide" data-bs-ride="carousel" >
+            <!--carousel operating indicators(like arrow buttons)-->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+               <!-- end carousel operating indicators(like arrow buttons)-->
+              
+            <!--Carousel function start-->
+            <div class="carousel-inner">
+              <div class="carousel-item active " data-bs-interval="10000">
+                <div class="slide-flex" id="slide-1">
+                  <div class="img filter">
+                    <img src="assets/images/birthday.jpg" alt="">
+                  </div>
+                  <div class="slide-content">
+                    <h2>Birthday Parties</h2>
+                    <h2>$ 500</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptatum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, placeat.</p>
+                    <div>
+                      <p><i class="bi bi-check2-circle"></i> Lorem ipsum dolor sit amet.</p>
+                      <p><i class="bi bi-check2-circle"></i> Lorem ipsum dolor sit amet.</p>
+                      <p><i class="bi bi-check2-circle"></i> Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus qui sequi nisi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit doloremque nobis expedita ratione delectus quam.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="slide-flex" id="slide-1">
+                  <div class="img">
+                    <img src="assets/images/private.jpg" alt="">
+                  </div>
+                  <div class="slide-content">
+                    <h2>Private Parties</h2>
+                    <h2>$ 300</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptatum?</p>
+                    <div>
+                      <p><i class="bi bi-check2-circle"></i> Lorem ipsum dolor sit amet.</p>
+                      <p><i class="bi bi-check2-circle"></i> Lorem ipsum dolor sit amet.</p>
+                      <p><i class="bi bi-check2-circle"></i> Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus qui sequi nisi.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="slide-flex" id="slide-1">
+                  <div class="img filter">
+                    <img src="assets/images/custom.jpg" alt="" >
+                  </div>
+                  <div class="slide-content">
+                    <h2>Custom Parties</h2>
+                    <h2>$ 200</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptatum?</p>
+                    <div>
+                      <p><i class="bi bi-check2-circle"></i> Lorem ipsum dolor sit amet.</p>
+                      <p><i class="bi bi-check2-circle"></i> Lorem ipsum dolor sit amet.</p>
+                      <p><i class="bi bi-check2-circle"></i> Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus qui sequi nisi.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+      </section>
+      <!--End Event Section-->
+      
+      <!--Start Book a Table Section-->
+      <section class="book-a-table-page" id="book-a-table" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+        <h3>Book A Table</h3>
+        <h2>Book a <span>Table</span></h2>
+        <div class="book-a-table-page-flex">
+          <div class="img-section">
+            <img src="assets/images/bookatable.jpg" alt="" >
+          </div>
+          <div class="form-section">
+            <form action="">
+              <div class="form-section-grid">
+              <input type="text" name="name" placeholder="Enter Your Name" required>
+              <input type="email" name="" placeholder="Your Email" required>
+              <input type="tel" name="" placeholder="Your Number" required>
+              <input type="datetime-local" name="date_time" placeholder="Enter Booking Date and Time" required>
+              <input type="number" name="" placeholder="Number of People" min="1" max="6" required>
+              <textarea name="" id="" placeholder="Enter Your Specification or Requirements" required></textarea>
+            </div>
+              <button type="submit">Book A Table</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!--End book a table Section-->
+      <!--Start Gallery Section-->
+      <section class="gallery" id="gallery" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+        <h3>Gallery</h3>
+        <h2>Some photos from <span>Our Restaurant</span></h2>
+        <div class="gallery-grid">
+          <div class="box"><img src="assets/images/gallery-1.jpg" alt=""></div>
+          <div class="box"><img src="assets/images/gallery-2.jpg" alt=""></div>
+          <div class="box"><img src="assets/images/gallery-3.jpg" alt=""></div>
+          <div class="box"><img src="assets/images/gallery-4.jpg" alt=""></div>
+          <div class="box"><img src="assets/images/gallery-4.jpg" alt=""></div>
+          <div class="box"><img src="assets/images/gallery-3.jpg" alt=""></div>
+          <div class="box"><img src="assets/images/gallery-2.jpg" alt=""></div>
+          <div class="box"><img src="assets/images/gallery-1.jpg" alt=""></div>
+        </div>
+      </section>
+      <!--End End Gallery Section-->
+      <!--Start Chefs Section-->
+      <section class="chef" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+        <h3 class="h3">Chef</h3>
+        <h2 class="h2">Our Professional <span>Chefs</span></h2>
+        <div class="chef-grid">
+          <div class="chef-member">
+            <img src="assets/images/developer.jpg" alt="">
+            <div class="chef-member-inside">
+              <h4>Viswanadhapalli <span>Vennela</span>
+              </h4>
+              <p></p>
+               
+              <div class="chef-member-info">
+                <div  >
+                  <h5>Web Developer</h5>
+                </div>
+                <div class="social" >
+                  <i class="bi bi-twitter-x"></i>
+                  <i class="bi bi-facebook"></i>
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-linkedin"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chef-member">
+            <img src="assets/images/chef.jpg" alt="">
+            <div class="chef-member-inside">
+              <h4>Walter<span>White</span></h4>
+              <p></p>
+              <div class="chef-member-info">
+                <div>
+                  <h5>Master Chef</h5>
+                </div>
+                <div class="social">
+                  <i class="bi bi-twitter-x"></i>
+                  <i class="bi bi-facebook"></i>
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-linkedin"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chef-member">
+            <img src="assets/images/chef.jpg" alt="">
+            <div class="chef-member-inside">
+              <h4>Walter<span>White</span></h4>
+              <p></p>
+              <div class="chef-member-info">
+                <div>
+                  <h5>Master Chef</h5>
+                </div>
+                <div class="social">
+                  <i class="bi bi-twitter-x"></i>
+                  <i class="bi bi-facebook"></i>
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-linkedin"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End Chefs Section-->
+      <!--Start Testmonials Section-->
+      <section class="testimonials" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+          <div id="carouselExampleDark" class="carousel carousel-dark  carousel-slide" data-bs-ride="carousel" >
+            <!--carousel operating indicators(like arrow buttons)-->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+               <!-- end carousel operating indicators(like arrow buttons)-->
+              
+            <!--Carousel function start-->
+            <div class="carousel-inner">
+              <div class="carousel-item active " data-bs-interval="10000">
+                <div class="slide-block" id="slide-1">
+                   
+                    <img src="assets/images/gallery-1.jpg" alt="">
+                    <div>
+                      <h2>Viswanadhapalli Vennela</h2>
+                      <h4>Web Developer</h4>
+                      <p><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i></p>
+                      <p><i class="bi bi-quote quote-icon-left"></i> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, alias!</span> <i class="bi bi-quote quote-icon-right"></i></q>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="slide-block" id="slide-1">
+                   
+                  <img src="assets/images/gallery-4.jpg" alt="">
+                  <div>
+                    <h2>Viswanadhapalli Vennela</h2>
+                    <h4>Web Developer</h4>
+                    <p><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i></p>
+                    <p><i class="bi bi-quote quote-icon-left"></i> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, alias!</span> <i class="bi bi-quote quote-icon-right"></i></q>
+                  </div>
+              </div>
+              </div>
+              <div class="carousel-item">
+                <div class="slide-block" id="slide-1">
+                   
+                  <img src="assets/images/gallery-2.jpg" alt="">
+                  <div>
+                    <h2>Viswanadhapalli Vennela</h2>
+                    <h4>Web Developer</h4>
+                    <p><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i></p>
+                    <p><i class="bi bi-quote quote-icon-left"></i> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, alias!</span> <i class="bi bi-quote quote-icon-right"></i></q>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+         
+      </section>
+      <!--End Testmonials Section-->
+      <!--Start Contact Section-->
+      <section class="contact" id="contact" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+        <h3 class="h3">Contact</h3>
+        <h2 class="h2">Check Our <span>Contact</span></h2>
+         
+          <div class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.0177517232496!2d78.4906804441493!3d17.41093571601725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99204712e1e7%3A0x141580d7777ea28f!2sSmokey%20Bites!5e0!3m2!1sen!2sin!4v1727612870382!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="contact-information">
+            <div class="details-1">
+              <h3 class="h2">Get in touch</h3>
+              <p>Et id eius voluptates atque nihil voluptatem enim in tempore minima sit ad mollitia commodi minus.</p>
+              <div>
+                <h4><i class="bi bi-geo-alt-fill" style="color:var(--button-color);"></i> Location:</h4>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+              <div>
+                <h4><i class="bi bi-envelope " style="color:var(--button-color);"></i> Email:</h4>
+                <p>info@example.com</p>
+              </div>
+              <div>
+                <h4><i class="bi bi-phone-fill" style="color:var(--button-color);"></i> Call:</h4>
+                <p>+1 5589 55488 55</p>
+              </div>
+            </div>
+            <div class="details-2">
+              <form action="">
+                <div class="form">
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="email" placeholder="Email" name="email" required>
+                <input type="text" placeholder="Subject" name="subject" required>
+                <textarea  id="" placeholder="Message" name="message" required></textarea>
+              </div>
+              <div class="button">
+                <button type="submit">Send Message</button>
+              </div>
+                
+              </form>
+            </div>
+          </div>
+      </section>
+      <!--End Contact Section-->
+      
+</main>
+<!--Start footer Section-->
+<footer class="footer">
+  <div class="footer-flex">
+    <div class="footer-flex-part">
+      <h4><i class="bi bi-geo-alt"></i> Address</h4>
+      <p>A108 Adam Street
+        New York, NY 535022</p>
+    </div>
+    <div class="footer-flex-part">
+      <h4><i class="bi bi-telephone"></i> Contact</h4>
+      <p><span>Phone:</span>+1 5589 55488 55</p>
+      <p><span>Email:</span>info@example.com</p>
+    </div>
+    <div class="footer-flex-part">
+      <h3><i class="bi bi-clock"></i> Opening Hours</h3>
+      <p><span>Mon-Sat:</span>11AM - 23PM</p>
+      <p><span>Sunday:</span>Closed</p>
+    </div>
+    <div class="footer-flex-part">
+      <h4>Follou Us</h4>
+      <div class="social-network">
+      <i class="bi bi-facebook "></i>
+      <i class="bi bi-twitter-x"></i>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-linkedin"></i>
+    </div>
+    </div>
+  </div>
+  <hr>
+  <div class="footer-part2">
+    <p>&copy;Copyright SmokeyBites All Rights Reserved</p>
+    <p>Designed By <a href="https://www.linkedin.com/in/viswanadhapalli-vennela-45860b22a/">Chinni_Web_x</a></p>
+  </div>
+</footer>
+<!--End footer Section-->
+            <!-- Bootstrap JS -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+            <script>
+              AOS.init(); // Initialize AOS
+            </script>
+            <script>
+              
+            </script>
+            
+    </body>
+</html>
+
+
+
