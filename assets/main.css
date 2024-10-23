@@ -662,7 +662,7 @@ nav a:hover{
     width:200%;
     height:200%;
     object-fit: cover;
-    animation: clipAnimation 30s infinite ease-in-out;
+    animation: clipAnimation 20s infinite ease-in-out;
      
 }
 @keyframes clipAnimation {
